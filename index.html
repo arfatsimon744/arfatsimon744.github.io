@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arfat Simon helps businesses grow with practical SEO and digital marketing strategies." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Arfat Simon | SEO & Digital Marketing Freelancer</title>
+  <style>
+    :root{--bg:#0b1020;--panel:#111a30;--panel2:#151f39;--text:#f4f7ff;--muted:#aab6d0;--line:rgba(255,255,255,.11);--accent:#72e2c0;--accent2:#83a8ff;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,rgba(74,112,210,.18),transparent 32rem),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:-.04em;font-size:1.15rem}.brand span{color:var(--accent)}.links{display:flex;gap:26px;align-items:center;color:var(--muted);font-size:.92rem}.links a:hover{color:var(--text)}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:10px;padding:8px 11px;font-size:1.1rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid transparent;border-radius:999px;padding:13px 20px;font-weight:750;background:var(--accent);color:#07131a;transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(114,226,192,.18)}.btn.secondary{background:transparent;color:var(--text);border-color:var(--line)}.eyebrow{color:var(--accent);font-weight:800;letter-spacing:.15em;text-transform:uppercase;font-size:.75rem}
+    .hero{padding:92px 0 82px;display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}.hero h1{font-size:clamp(2.7rem,6vw,5.1rem);line-height:1.04;letter-spacing:-.065em;margin:18px 0 22px}.hero h1 em{font-style:normal;color:var(--accent)}.lead{font-size:1.12rem;color:var(--muted);max-width:650px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.micro{display:flex;gap:20px;flex-wrap:wrap;margin-top:30px;color:var(--muted);font-size:.88rem}.micro span:before{content:"✓";color:var(--accent);font-weight:900;margin-right:8px}
+    .visual{position:relative;min-height:390px;display:grid;place-items:center}.orb{position:absolute;width:300px;height:300px;border-radius:50%;background:linear-gradient(135deg,rgba(114,226,192,.25),rgba(131,168,255,.15));filter:blur(1px);border:1px solid rgba(255,255,255,.15)}.profile-card{position:relative;width:min(100%,360px);padding:28px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,rgba(25,37,66,.95),rgba(14,22,42,.96));box-shadow:0 28px 80px rgba(0,0,0,.35);transform:rotate(2deg)}.avatar{width:64px;height:64px;border-radius:20px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#091321;font-size:1.5rem;font-weight:900}.profile-card h3{margin:18px 0 2px;font-size:1.4rem}.profile-card p{margin:0;color:var(--muted)}.metric{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.metric div{padding:14px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.035)}.metric strong{display:block;font-size:1.25rem;color:var(--accent)}.metric small{color:var(--muted)}
+    section{padding:76px 0}.section-head{max-width:680px;margin-bottom:34px}.section-head h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.05em;line-height:1.1;margin:10px 0 12px}.section-head p{color:var(--muted);margin:0}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{padding:25px;border:1px solid var(--line);border-radius:20px;background:rgba(17,26,48,.72)}.icon{width:44px;height:44px;border-radius:14px;background:rgba(114,226,192,.12);color:var(--accent);display:grid;place-items:center;font-size:1.25rem}.card h3{margin:17px 0 8px}.card p,.card li{color:var(--muted);font-size:.95rem}.card ul{padding-left:18px;margin-bottom:0}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:start}.panel{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:28px}.steps{display:grid;gap:16px}.step{display:flex;gap:15px}.num{flex:0 0 34px;height:34px;border-radius:11px;background:rgba(131,168,255,.14);color:var(--accent2);display:grid;place-items:center;font-weight:800}.step p{margin:3px 0 0;color:var(--muted);font-size:.94rem}.step h3{margin:0;font-size:1rem}
+    .work{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.work-card{min-height:210px;padding:25px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(131,168,255,.12),rgba(114,226,192,.07)),var(--panel)}.tag{display:inline-block;padding:5px 10px;border-radius:999px;background:rgba(114,226,192,.12);color:var(--accent);font-size:.75rem;font-weight:800}.work-card h3{font-size:1.3rem;margin:17px 0 8px}.work-card p{color:var(--muted);margin:0}.note{color:var(--muted);font-size:.82rem;margin-top:16px}
+    .cta{padding:42px;border-radius:26px;background:linear-gradient(120deg,rgba(114,226,192,.16),rgba(131,168,255,.17));border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.05em;line-height:1.1;margin:0 0 10px}.cta p{margin:0;color:var(--muted)}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px}.contact-info p{color:var(--muted)}.contact-item{padding:14px 0;border-bottom:1px solid var(--line)}.contact-item small{display:block;color:var(--muted)}form{display:grid;gap:13px}label{font-size:.88rem;color:var(--muted)}input,textarea{width:100%;margin-top:6px;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:#0b1327;color:var(--text);font:inherit;outline:none}input:focus,textarea:focus{border-color:var(--accent)}textarea{min-height:125px;resize:vertical}.footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){.hero,.split,.contact-grid{grid-template-columns:1fr}.hero{padding-top:65px;gap:20px}.visual{min-height:330px}.grid3{grid-template-columns:1fr 1fr}.links{display:none;position:absolute;top:78px;left:0;right:0;padding:20px;background:#0d1529;border-bottom:1px solid var(--line);flex-direction:column;z-index:5}.links.open{display:flex}.menu{display:block}.cta{align-items:flex-start;flex-direction:column}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,var(--max))}.grid3,.work{grid-template-columns:1fr}.hero h1{font-size:2.8rem}.profile-card{padding:22px}.cta{padding:28px}section{padding:58px 0}.nav{height:68px}.links{top:68px}}
+  </style>
+
+<style id="premium-refresh">
+:root{--bg:#030d1c;--panel:#071a2d;--panel2:#0a2238;--text:#f5f8ff;--muted:#b6c6d9;--line:rgba(117,190,214,.18);--accent:#00e6a0;--accent2:#66f0d0;--max:1200px}
+html{scroll-padding-top:90px}
+body{background:radial-gradient(ellipse at 78% 15%,rgba(0,230,160,.20),transparent 32rem),radial-gradient(ellipse at 8% 55%,rgba(0,142,190,.12),transparent 28rem),#030b18;color:var(--text)}
+.wrap{width:min(var(--max),calc(100% - 48px))}
+.nav{height:88px;position:relative;z-index:10;border-bottom:1px solid rgba(99,190,198,.17);gap:22px}
+.brand{font-size:1.18rem;display:flex;align-items:center;gap:11px;letter-spacing:-.045em}
+.brand:before{content:"AS";display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#00e6a0,#68d9ff);color:#03202a;font-size:1.08rem;font-weight:950;box-shadow:0 0 26px rgba(0,230,160,.24)}
+.brand span{color:var(--accent)}
+.links{gap:clamp(13px,2vw,27px);font-weight:650;color:#d2deed}
+.links a{transition:color .2s}
+.links a:hover{color:var(--accent)}
+.nav:after{content:"LET'S WORK TOGETHER ↗";margin-left:auto;border-radius:999px;padding:12px 19px;background:linear-gradient(100deg,#00d98e,#79f4d2);color:#032017;font-size:.82rem;font-weight:900;white-space:nowrap}
+.hero{padding:82px 0 42px;grid-template-columns:1.13fr .87fr;gap:48px;min-height:560px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#54f0c2;letter-spacing:.09em;font-size:.78rem}
+.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:#00e6a0;box-shadow:0 0 14px #00e6a0}
+.hero h1{font-size:clamp(3.2rem,6.4vw,5.7rem);line-height:.99;letter-spacing:-.075em;margin:22px 0 23px;max-width:720px}
+.hero h1 em{color:#00e6a0;text-shadow:0 0 28px rgba(0,230,160,.14)}
+.lead{font-size:1.08rem;line-height:1.75;color:#c0cddd;max-width:620px}
+.btn{background:linear-gradient(105deg,#00dc98,#8af3d7);color:#032019;padding:14px 22px;box-shadow:0 10px 30px rgba(0,220,152,.12)}
+.btn.secondary{background:rgba(8,27,47,.7);border-color:rgba(121,211,219,.28);color:#f4f8ff}
+.btn:hover{box-shadow:0 14px 34px rgba(0,230,160,.2)}
+.micro{gap:17px;color:#a9bed0}
+.visual{min-height:420px;isolation:isolate}
+.orb{width:min(82%,390px);height:min(82%,390px);background:radial-gradient(circle,rgba(0,238,165,.35),rgba(0,146,176,.12) 55%,transparent 72%);border:1px solid rgba(0,235,177,.24);box-shadow:0 0 90px rgba(0,218,166,.12)}
+.profile-card{width:min(100%,390px);padding:30px;border-radius:27px;border:1px solid rgba(106,218,218,.25);background:linear-gradient(145deg,rgba(9,34,57,.96),rgba(4,19,37,.96));box-shadow:0 28px 90px rgba(0,0,0,.48),inset 0 1px rgba(255,255,255,.06);transform:rotate(1deg)}
+.avatar{width:72px;height:72px;border-radius:21px;background:linear-gradient(135deg,#00e6a0,#71dfff);box-shadow:0 0 35px rgba(0,230,160,.2)}
+.profile-card h3{font-size:1.55rem}
+.metric{gap:12px}
+.metric div{background:rgba(255,255,255,.035);border-color:rgba(117,210,220,.17);padding:16px}
+.metric strong{color:#50e9bd}
+section{padding:76px 0}
+.section-head h2{font-size:clamp(2.2rem,4vw,3.2rem)}
+.card,.panel,.work-card{background:linear-gradient(145deg,rgba(8,29,49,.94),rgba(5,19,36,.94));border-color:rgba(104,194,211,.18);box-shadow:0 16px 45px rgba(0,0,0,.12)}
+.card{transition:transform .22s,border-color .22s}
+.card:hover,.work-card:hover{transform:translateY(-5px);border-color:rgba(0,230,160,.42)}
+.icon{background:rgba(0,230,160,.11);color:#21e7ad}
+.num{background:rgba(0,230,160,.12);color:#50e9bd}
+.work-card{min-height:220px}
+.tag{background:rgba(0,230,160,.12);color:#58eec5}
+.cta{background:linear-gradient(110deg,rgba(0,230,160,.16),rgba(0,136,190,.12));border-color:rgba(0,230,160,.22)}
+input,textarea{background:#041426;border-color:rgba(117,190,214,.22)}
+input:focus,textarea:focus{border-color:#00e6a0;box-shadow:0 0 0 3px rgba(0,230,160,.08)}
+.footer{border-color:rgba(99,190,198,.17)}
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:30;display:flex;align-items:center;gap:9px;padding:14px 19px;border-radius:999px;background:linear-gradient(110deg,#00d66f,#35e78d);color:#032515;font-weight:900;box-shadow:0 12px 34px rgba(0,0,0,.38),0 0 25px rgba(0,220,110,.18);transition:.2s}
+.whatsapp-float:hover{transform:translateY(-4px)}
+.whatsapp-float svg{width:22px;height:22px;fill:currentColor}
+@media(max-width:800px){
+ .wrap{width:min(var(--max),calc(100% - 34px))}
+ .nav:after{display:none}
+ .nav{height:76px}
+ .hero{padding:62px 0 35px;gap:10px}
+ .hero h1{font-size:clamp(3rem,10vw,4.6rem)}
+ .visual{min-height:340px}
+ .links{top:76px;background:#06172a}
+}
+@media(max-width:560px){
+ .wrap{width:calc(100% - 30px)}
+ .nav{height:70px}
+ .links{top:70px}
+ .hero{padding-top:48px}
+ .hero h1{font-size:clamp(2.65rem,12vw,3.5rem)}
+ .lead{font-size:1rem}
+ .profile-card{transform:none;padding:23px}
+ .visual{min-height:300px}
+ .micro{font-size:.8rem;gap:10px}
+ .cta{padding:26px}
+ .whatsapp-float{right:14px;bottom:14px;padding:12px 15px}
+}
+</style>
+
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#home">ARFAT<span>.</span></a>
+    <nav class="links" id="navLinks">
+      <a href="#services">Services</a><a href="#about">About</a><a href="#work">Portfolio</a><a href="#process">Process</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="menu" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <div class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow">SEO · Digital Marketing · Growth</div>
+        <h1>Turn online searches into <em>real growth.</em></h1>
+        <p class="lead">I'm Arfat Simon, a freelance SEO and digital marketing specialist helping businesses improve their online visibility, attract the right audience, and build a stronger digital presence.</p>
+        <div class="actions">
+          <a class="btn" href="#contact">Let's work together <span>↗</span></a>
+          <a class="btn secondary" href="#services">Explore services</a>
+        </div>
+        <div class="micro"><span>Clear communication</span><span>Practical strategy</span><span>Detail-focused work</span></div>
+      </div>
+      <div class="visual" aria-label="Professional profile card">
+        <div class="orb"></div>
+        <div class="profile-card">
+          <div class="avatar">AS</div>
+          <h3>Arfat Simon</h3>
+          <p>Freelance SEO & Digital Marketer</p>
+          <div class="metric">
+            <div><strong>SEO</strong><small>Search visibility</small></div>
+            <div><strong>Growth</strong><small>Digital strategy</small></div>
+          </div>
+          <p style="margin-top:20px;font-size:.88rem">Helping brands get found by the people who matter.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wrap" aria-label="Core services" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border:1px solid rgba(104,194,211,.2);border-radius:18px;background:rgba(7,25,44,.86);padding:16px 8px;margin:0 auto 28px;box-shadow:0 16px 42px rgba(0,0,0,.18)">
+      <div style="padding:8px 14px;text-align:center;color:#d8e8f4">⌕ &nbsp; SEO Optimization</div>
+      <div style="padding:8px 14px;text-align:center;color:#d8e8f4">↗ &nbsp; Digital Strategy</div>
+      <div style="padding:8px 14px;text-align:center;color:#d8e8f4">◉ &nbsp; Social Media</div>
+      <div style="padding:8px 14px;text-align:center;color:#d8e8f4">✎ &nbsp; Content Marketing</div>
+      <div style="padding:8px 14px;text-align:center;color:#d8e8f4">◎ &nbsp; Website Growth</div>
+    </div>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">What I do</div><h2>Digital services built around your goals.</h2><p>Focused support for businesses that want a stronger online presence—not confusing jargon or one-size-fits-all tactics.</p></div>
+        <div class="grid3">
+          <article class="card"><div class="icon">⌕</div><h3>SEO Optimization</h3><p>Improve how your website appears in search and make it easier for potential customers to discover you.</p><ul><li>Keyword research</li><li>On-page SEO</li><li>Technical SEO checks</li><li>SEO audit & recommendations</li></ul></article>
+          <article class="card"><div class="icon">↗</div><h3>Digital Marketing</h3><p>Build a practical marketing approach that connects your brand with the right audience.</p><ul><li>Digital marketing strategy</li><li>Audience research</li><li>Campaign planning</li><li>Performance insights</li></ul></article>
+          <article class="card"><div class="icon">✎</div><h3>Content & Keyword Strategy</h3><p>Plan useful, search-focused content around what your audience is actually looking for.</p><ul><li>Content gap research</li><li>Content planning</li><li>Competitor analysis</li><li>SEO content briefs</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap split">
+        <div class="section-head"><div class="eyebrow">A little about me</div><h2>Thoughtful marketing. Measurable direction.</h2><p>I combine research, practical SEO fundamentals, and clear communication to help you make smarter decisions about your online growth.</p></div>
+        <div class="panel">
+          <h3>How I can support your business</h3>
+          <p style="color:var(--muted)">Whether you're launching a new website or improving an existing one, I'll first understand your goals, audience, and current challenges. Then I'll recommend focused actions that make sense for your business.</p>
+          <div class="steps">
+            <div class="step"><div class="num">01</div><div><h3>Understand</h3><p>Learn about your business, audience, competitors, and goals.</p></div></div>
+            <div class="step"><div class="num">02</div><div><h3>Plan</h3><p>Prioritize opportunities and create a clear action plan.</p></div></div>
+            <div class="step"><div class="num">03</div><div><h3>Improve</h3><p>Apply agreed optimizations and share clear progress updates.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Selected work</div><h2>Show the thinking behind the results.</h2><p>Use these project slots to present real work samples. Replace the examples below with your own audits, reports, or campaign projects before publishing.</p></div>
+        <div class="work">
+          <article class="work-card"><span class="tag">Sample project · SEO</span><h3>Website SEO Audit</h3><p>A sample audit layout covering technical issues, on-page opportunities, keyword targeting, and prioritized recommendations.</p></article>
+          <article class="work-card"><span class="tag">Sample project · Research</span><h3>Keyword & Competitor Research</h3><p>A sample research deliverable showing search intent, keyword groups, competitor gaps, and content opportunities.</p></article>
+        </div>
+        <p class="note">Portfolio note: these are sample project descriptions, not claims of completed client work or guaranteed outcomes.</p>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Simple process</div><h2>Easy to start. Clear at every step.</h2></div>
+        <div class="grid3">
+          <article class="card"><div class="icon">01</div><h3>Tell me about your project</h3><p>Share your website, goals, target audience, and what you'd like to improve.</p></article>
+          <article class="card"><div class="icon">02</div><h3>Get a clear plan</h3><p>I'll review your needs and outline the recommended scope, timeline, and deliverables.</p></article>
+          <article class="card"><div class="icon">03</div><h3>Move forward together</h3><p>Once we agree on the plan, I'll get to work and keep communication straightforward.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap cta">
+        <div><h2>Ready to grow your online presence?</h2><p>Let's talk about what your business needs next.</p></div>
+        <a class="btn" href="#contact">Start a conversation ↗</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Get in touch</div><h2>Tell me what you're working on.</h2><p>Share a few details and I'll have a better idea of how I can help.</p></div>
+        <div class="contact-grid">
+          <div class="panel contact-info">
+            <h3>Let's connect</h3>
+            <p>For project inquiries, collaborations, or questions, send a message using the form.</p>
+            <div class="contact-item"><small>Email</small><strong>arfatsimon744@gmail.com</strong></div>
+            <div class="contact-item"><small>Fiverr</small><strong>Add your Fiverr profile link</strong></div>
+            <div class="contact-item"><small>Location</small><strong>Bangladesh · Working worldwide</strong></div>
+            <p class="note">Currently available for project inquiries by email and WhatsApp. Fiverr profile coming soon.</p>
+          </div>
+          <div class="panel">
+            <form id="contactForm">
+              <label>Your name<input id="name" name="name" placeholder="Jane Smith" required /></label>
+              <label>Email address<input id="email" name="email" type="email" placeholder="jane@company.com" required /></label>
+              <label>How can I help?<textarea id="message" name="message" placeholder="Tell me about your website or project..." required></textarea></label>
+              <button class="btn" type="submit">Prepare email ↗</button>
+              <p class="note" id="formNote">This form opens your email app; it does not store or send data on this website.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-float" href="https://wa.me/8801743682741?text=Hello%20Arfat%2C%20I%20am%20interested%20in%20your%20SEO%20and%20digital%20marketing%20services." target="_blank" rel="noopener noreferrer" aria-label="Chat with Arfat Simon on WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 .7A15.1 15.1 0 0 0 3.05 23.57L1 31l7.62-2A15.1 15.1 0 1 0 16 .7Zm0 27.45a12.3 12.3 0 0 1-6.27-1.72l-.45-.27-4.52 1.19 1.2-4.4-.3-.46A12.34 12.34 0 1 1 16 28.15Zm6.77-9.24c-.37-.18-2.2-1.08-2.54-1.2-.34-.13-.59-.18-.84.18-.25.37-.97 1.2-1.19 1.45-.22.24-.44.27-.81.09-.37-.18-1.56-.58-2.98-1.85-1.1-.98-1.85-2.2-2.07-2.57-.22-.36-.02-.56.16-.74.16-.16.37-.43.55-.65.18-.22.24-.37.37-.62.12-.24.06-.46-.03-.64-.09-.18-.84-2.02-1.15-2.77-.3-.73-.61-.63-.84-.64h-.72c-.25 0-.65.09-.99.46-.34.37-1.3 1.27-1.3 3.1s1.33 3.6 1.52 3.84c.18.25 2.62 4 6.35 5.6.89.38 1.58.61 2.12.78.89.28 1.7.24 2.34.15.71-.11 2.2-.9 2.51-1.77.31-.86.31-1.6.22-1.76-.09-.15-.34-.24-.71-.43Z"/></svg>
+    WhatsApp
+  </a>
+  <footer class="wrap footer"><span>© <span id="year"></span> Arfat Simon. All rights reserved.</span><span>SEO & Digital Marketing Freelancer</span></footer>
+  <script>
+    const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+    menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));});
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.getElementById('contactForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim(), email=document.getElementById('email').value.trim(), message=document.getElementById('message').value.trim();
+      const subject=encodeURIComponent('Project inquiry from '+name);
+      const body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\n\nProject details:\n'+message);
+      window.location.href='mailto:arfatsimon744@gmail.com?subject='+subject+'&body='+body;
+    });
+  </script>
+</body>
+</html>
